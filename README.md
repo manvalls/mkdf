@@ -20,6 +20,6 @@ function PRF(a,b){
 }
 
 keys = mkdf(PRF,'password',['salt0','salt1','salt2']);
-key = String.fromCharCode.apply(this,key);
+key = String.fromCharCode.apply(this,keys);
 ```
 
